@@ -6,28 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Easy Modal</title>
 
+    <!-- CSS Vendor -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/highlight/styles/monokai.css">
     <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+    <!-- CSS App -->
+    <link rel="stylesheet" type="text/css" href="easy-modal/easy-modal-1.0.0.css">
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
 </head>
 <body>
-    <header>
+
+    <!-- Document Header -->
+    <header id="doc-header">
         <div class="container">
-            <h1>Easy Modal</h1>
+
+            <!-- Title -->
+            <div>
+                <h1>Easy Modal</h1>
+                <p><small>Version 1.0.0</small></p>
+            </div>
+
+            <!-- Navegation -->
+            <nav>
+                <ul>
+                    <li><a href="#install" title="Install">Install</a></li>
+                    <li><a href="#how-use" title="How Use">How Use</a></li>
+                    <li><a href="#example" title="Example">Example</a></li>
+                    <li><a href="#source-code" title="Source Code">Source Code</a></li>
+                    <li><a href="#about" title="About">About</a></li>
+                </ul>
+            </nav>
+
         </div>
     </header>
 
-    <main class="container">
-        <article>
-            <p><a id="open-modal" href="javascript:void(0);" title="Click here to open" class="button">Open Modal</a></p>
+    <!-- Document Body -->
+    <main id="doc-body" class="container">
+
+        <article id="how-use">
+            <h1>How Use</h1>
+            <pre>
+                <code class="javascript">var modal = new easyModal({
+    'title': 'Teste de Modal'
+});
+
+modal.open();</code>
+            </pre>
         </article>
+
+        <article id="example">
+            <h1>Example</h1>
+            <p>Clique no botão abaixo para abrir a modal.</p>
+            <p><a id="open-modal" href="javascript:void(0);" title="Click here to open" class="button" onclick="openModal();">Open Modal</a></p>
+            <pre>
+                <code>var modal = new easyModal({
+    'title': 'Teste'
+});
+
+modal.open();</code>
+            </pre>
+        </article>
+
+        <article id="source-code">
+            <h1>Source Code</h1>
+            
+            <h2>JavaScript:</h2>
+            <pre><code id="source-code-js" class="javascript">Loading...</code></pre>
+
+            <h2>CSS:</h2>
+            <pre><code id="source-code-css" class="css">Loading...</code></pre>
+        </article>
+
     </main>
 
-    <footer class="container">
+    <!-- Document Footer -->
+    <footer id="doc-footer" class="container">
         By Diego Marques
     </footer>
 
-    <script src="easy-modal/easy-modal-1.0.js"></script>
-    <script src="assets/example.js"></script>
+    <!-- JavaScript Vendor -->
+    <script src="vendor/highlight/highlight.pack.js"></script>
+
+    <!-- JavaScript App -->
+    <script src="easy-modal/easy-modal-1.0.0.js"></script>
+    <script src="assets/main.js"></script>
 </body>
 </html>
